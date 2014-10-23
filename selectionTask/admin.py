@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from models import AbstractTask, ConcreteTask, Subject, Result
+
+admin.site.register(AbstractTask)
+admin.site.register(ConcreteTask)
+admin.site.register(Subject)
+admin.site.register(Result)
