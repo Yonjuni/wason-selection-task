@@ -1,14 +1,14 @@
 from django.db import models
 
 
-class ControlTasks (models.Model):
-    control_task = models.TextField()
+class AbstractTasks (models.Model):
+    abstract_task = models.TextField()
     related_cards_url = models.CharField(max_length=50)
     correct_answer = models.CharField(max_length=4)
 
 
-class Tasks (models.Model):
-    task = models.TextField()
+class ConcreteTasks (models.Model):
+    concrete_task = models.TextField()
     related_cards_url = models.CharField(max_length=50)
     correct_answer = models.CharField(max_length=4)
 
