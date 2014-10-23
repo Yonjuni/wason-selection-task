@@ -3,6 +3,6 @@
 angular.module('BackendService', [])
     .factory('Backend', function ($http) {
         return {
-            loadQuestions: function () { $http.get("/loadQuestions") }
+            loadTask: function () { $http.get("/loadTask") }
         }
     });
