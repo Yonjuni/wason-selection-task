@@ -4,12 +4,14 @@ var selectionTaskApp = angular.module(
     "selectionTask",
     [
         "ngAnimate",
-        "ngRoute"
+        "ngRoute",
+        "localization",
+        "BackendService"
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
         when('/', {templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'}).
-        when('/question/', {templateUrl: '/static/partials/question.html', controller: 'questionCtrl'}).
+        when('/task/:id', {templateUrl: '/static/partials/task.html', controller: 'taskCtrl'}).
         otherwise({templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');

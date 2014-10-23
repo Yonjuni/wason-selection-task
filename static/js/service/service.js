@@ -3,6 +3,7 @@
 angular.module('BackendService', [])
     .factory('Backend', function ($http) {
         return {
-            loadTask: function () { $http.get("/loadTask") }
+            assign: function () { $http.get("/task/assign") },
+            submit: function () { $http.get("/task/submit") }
         }
     });

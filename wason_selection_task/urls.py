@@ -3,8 +3,9 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
-
+urlpatterns = patterns(
+    '',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^task/', include('selectionTask.urls')),
     url(r'^.*', 'selectionTask.views.home', name='home'),
 )

@@ -37,7 +37,7 @@ class Subject (models.Model):
 
 
 class Result (models.Model):
-    subject = models.ForeignKey(Subjects, related_name='results')
+    subject = models.ForeignKey(Subject, related_name='results')
     card_one_isflipped = models.BooleanField()
     card_two_isflipped = models.BooleanField()
     card_three_isflipped = models.BooleanField()
