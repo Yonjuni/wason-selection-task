@@ -1,6 +1,6 @@
 'use strict';
 
-trueOrFalseApp.controller("introductionCtrl", function ($scope) {
+selectionTaskApp.controller("introductionCtrl", function ($scope) {
 
 
 
