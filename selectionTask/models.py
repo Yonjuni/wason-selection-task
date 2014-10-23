@@ -18,6 +18,10 @@ class Subjects (models.Model):
     subject_group = models.CharField(max_length=10)
 
 
+class Result (models.Model):
+    pass
+
+
 class Answers (models.Model):
     answer = models.CharField(max_length=1)
     subject = models.ForeignKey(Result, related_name='answers')
