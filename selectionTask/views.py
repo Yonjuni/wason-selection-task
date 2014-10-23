@@ -9,6 +9,8 @@ def home(request):
 
 
 def assign(request):
+    if not 'id' in request.POST:
+        return HttpResponse('{"Error": "No ID supplied."}', content_type='application/json', status=400)
     pass
 
 
