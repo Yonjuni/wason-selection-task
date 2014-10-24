@@ -3,14 +3,16 @@
 
     <h1>{{ taskName }}</h1>
 
-    {{ task }}
+    {{ taskDescription }}
 
-    <img src="{{ cardUrl }}" style="float: left;" />
-    <img src="{{ cardUrl }}" style="float: left;" />
-    <img src="{{ cardUrl }}" style="float: left;" />
-    <img src="{{ cardUrl }}" style="float: left;" />
+    <img src="{{ cardId1 }}"/>
+    <img src="{{ cardId2 }}"/>
+    <img src="{{ cardId3 }}"/>
+    <img src="{{ cardId4 }}"/>
 
-    <div style="float: left;">
+    <span data-i18n="_taskQuestion_"></span>
+
+    <div>
 
         <button ng-click="clickNext()" data-i18n="_nextButton_"></button>
 
