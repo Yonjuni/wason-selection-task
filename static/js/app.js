@@ -10,7 +10,7 @@ var selectionTaskApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        when('/', {templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'}).
+        when('/:id', {templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'}).
         when('/task/:id', {templateUrl: '/static/partials/task.html', controller: 'taskCtrl'}).
         otherwise({templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API

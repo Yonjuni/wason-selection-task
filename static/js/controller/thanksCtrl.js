@@ -1,6 +1,6 @@
 'use strict';
 
-selectionTaskApp.controller("introductionCtrl", function ($scope) {
+selectionTaskApp.controller("thanksCtrl", function ($scope) {
 
     $scope.submitbutton = function () {
 

@@ -13,5 +13,15 @@
         "key"        : "_taskQuestion_",
         "value"      : "Which cards have to be flipped to proof the above mentioned rule?",
         "description": "Question regarding the task"
+    },
+    {
+        "key"        : "_welcomeMessage_",
+        "value"      : "Welcome to the experiment",
+        "description": "Welcome Message on introduction page"
+    },
+    {
+        "key"        : "_continueButton_",
+        "value"      : "Continue to experiment",
+        "description": "Continue button on introduction page"
     }
 ]
