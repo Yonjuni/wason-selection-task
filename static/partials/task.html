@@ -1,14 +1,26 @@
 <div>
 
+    <p>{{ taskData.description }}</p>
 
-    <h1>{{ taskName }}</h1>
+    <div>
+        <div ng-class="{'selected': taskData.1.selected}" ng-click="setSelection(1)"
+             class="card-container" onmousedown="event.preventDefault()">
+            <div class="card">{{ taskData.1.card_id }}</div>
+        </div>
+        <div ng-class="{'selected': taskData.2.selected}" ng-click="setSelection(2)"
+             class="card-container" onmousedown="event.preventDefault()">
+            <div class="card">{{ taskData.2.card_id }}</div>
+        </div>
+        <div ng-class="{'selected': taskData.3.selected}" ng-click="setSelection(3)"
+             class="card-container" onmousedown="event.preventDefault()">
+            <div class="card">{{ taskData.3.card_id }}</div>
+        </div>
+        <div ng-class="{'selected': taskData.4.selected}" ng-click="setSelection(4)"
+             class="card-container" onmousedown="event.preventDefault()">
+            <div class="card">{{ taskData.4.card_id }}</div>
+        </div>
+    </div>
 
-    {{ taskDescription }}
-
-    <img src="{{ cardId1 }}"/>
-    <img src="{{ cardId2 }}"/>
-    <img src="{{ cardId3 }}"/>
-    <img src="{{ cardId4 }}"/>
 
     <span data-i18n="_taskQuestion_"></span>
 

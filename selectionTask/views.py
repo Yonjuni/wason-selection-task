@@ -29,6 +29,7 @@ def assign(request):
     else:
         task = ConcreteTask.objects.all()[subject.results.count()]
     return HttpResponse(json.dumps({
+        'description': task.description,
         1: {
             'card_id': task.card_one,
             'is_flipped': task.card_one_isflipped
