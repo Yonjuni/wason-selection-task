@@ -3,19 +3,19 @@
     <p>{{ taskData.description }}</p>
 
     <div>
-        <div ng-class="{'selected': taskData.1.selected}" ng-click="setSelection(1)"
+        <div ng-class="{'selected': taskData[1].selected}" ng-click="setSelection(1)"
              class="card-container" onmousedown="event.preventDefault()">
             <div class="card">{{ taskData.1.card_id }}</div>
         </div>
-        <div ng-class="{'selected': taskData.2.selected}" ng-click="setSelection(2)"
+        <div ng-class="{'selected': taskData[2].selected}" ng-click="setSelection(2)"
              class="card-container" onmousedown="event.preventDefault()">
             <div class="card">{{ taskData.2.card_id }}</div>
         </div>
-        <div ng-class="{'selected': taskData.3.selected}" ng-click="setSelection(3)"
+        <div ng-class="{'selected': taskData[3].selected}" ng-click="setSelection(3)"
              class="card-container" onmousedown="event.preventDefault()">
             <div class="card">{{ taskData.3.card_id }}</div>
         </div>
-        <div ng-class="{'selected': taskData.4.selected}" ng-click="setSelection(4)"
+        <div ng-class="{'selected': taskData[4].selected}" ng-click="setSelection(4)"
              class="card-container" onmousedown="event.preventDefault()">
             <div class="card">{{ taskData.4.card_id }}</div>
         </div>
