@@ -11,7 +11,7 @@ class Task (models.Model):
     card_two_isflipped = models.BooleanField()
     card_three_isflipped = models.BooleanField()
     card_four_isflipped = models.BooleanField()
-    story = models.TextField()
+    story = models.TextField(default='', blank=True)
 
 
 class AbstractTask (Task):

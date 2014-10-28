@@ -4,6 +4,7 @@ selectionTaskApp.controller("taskCtrl", function ($scope, $routeParams, $locatio
     console.log($routeParams['id']);
     Backend.assign($routeParams['id']).success(function(data){
         var result = angular.fromJson(data);
+        console.log(result);
         if ("Error" in result) {
             $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
