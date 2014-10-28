@@ -4,9 +4,10 @@ selectionTaskApp.controller("taskCtrl", function ($scope, $routeParams, $locatio
     console.log($routeParams['id']);
     Backend.assign($routeParams['id']).success(function(data){
         var result = angular.fromJson(data);
-        if (!("Error" in result)) {
-            $scope.taskData = result;
+        if ("Error" in result) {
+            $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
+        $scope.taskData = result;
     });
 
     $scope.setSelection = function (number) {
