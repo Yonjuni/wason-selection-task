@@ -46,6 +46,8 @@ body {
     border-radius: 5px;
     max-width: 750px;
     margin: 2em auto;
+    padding: 1%;
+    box-shadow: 4px 4px 10px black;
 }
 
 .taskdescription {
@@ -55,6 +57,8 @@ body {
     border-radius: 5px;
     max-width: 750px;
     margin: 2em auto;
+    padding: 1%;
+    box-shadow: 4px 4px 10px black;
 }
 
 .taskQuestion {
@@ -64,6 +68,8 @@ body {
     border-radius: 5px;
     max-width: 750px;
     margin: 2em auto;
+    padding: 1%;
+    box-shadow: 4px 4px 10px black;
 }
 
 .card-centering-row {
@@ -109,6 +115,7 @@ body {
     margin-bottom: 3em;
     font-size: 15pt;
     border-radius: 5px;
+    padding: 15px;
 }
 
 .continuebutton {
@@ -117,6 +124,7 @@ body {
     margin-bottom: 3em;
     font-size: 15pt;
     border-radius: 5px;
+    padding: 15px;
 }
 
 .thanks-text {
@@ -125,6 +133,8 @@ body {
     border: 1px solid #808080;
     border-radius: 5px;
     text-align: center;
+    padding: 1%;
+    box-shadow: 4px 4px 10px black;
 }
 
 .submitbutton {
@@ -132,4 +142,5 @@ body {
     font-size: 15pt;
     border-radius: 5px;
     margin-right: 3em;
+    padding: 15px;
 }
