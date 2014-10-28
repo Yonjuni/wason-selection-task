@@ -1,8 +1,9 @@
 'use strict';
 
-selectionTaskApp.controller("thanksCtrl", function ($scope) {
+selectionTaskApp.controller("thanksCtrl", function ($scope, $location) {
 
-    $scope.submitbutton = function () {
+    //TODO add code of online survey company
+    $scope.submitButton = function () {
 
     };
 

@@ -23,6 +23,7 @@ selectionTaskApp.controller("taskCtrl", function ($scope, $routeParams, $locatio
         }).success(function (data) {
             var result = angular.fromJson(data);
             if ("Finished" in result) {
+
                 $location.path('/thanks/' + $routeParams['id']);
             }
             if (!("Error" in result)) {

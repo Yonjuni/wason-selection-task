@@ -13,6 +13,7 @@ var selectionTaskApp = angular.module(
         when('/:id', {templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'}).
         when('/task/:id', {templateUrl: '/static/partials/task.html', controller: 'taskCtrl'}).
         when('/thanks/:id', {templateUrl: '/static/partials/thanks.html', controller: 'thanksCtrl'}).
+        when('/error/:id', {templateUrl: '/static/partials/error.html', controller: 'errorCtrl'}).
         otherwise({templateUrl: '/static/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
