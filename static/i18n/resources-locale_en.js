@@ -23,5 +23,10 @@
         "key"        : "_continueButton_",
         "value"      : "Continue to experiment",
         "description": "Continue button on introduction page"
+    },
+    {
+        "key"        : "_thanksText_",
+        "value"      : "Thank you for taking part in the experiment. After pressing the submit button you will be leaded to the survey.",
+        "description": "Thanks text after completing experiment"
     }
 ]
