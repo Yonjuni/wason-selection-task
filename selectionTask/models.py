@@ -15,15 +15,22 @@ class Task (models.Model):
 
 
 class AbstractTask (Task):
-    pass
+
+    def __unicode__(self):
+        return 'Abstract Task: ' + str(self.id)
+
 
 class ConcreteTask (Task):
-    pass
+    def __unicode__(self):
+        return 'Concrete Task: ' + str(self.id)
 
 
 class Subject (models.Model):
     subject_id = models.CharField(max_length=30, unique=True)
     group = models.BooleanField()
+
+    def __unicode__(self):
+        return 'Subject: ' + self.subject_id
 
     def is_abstract_group (self):
         return self.group
@@ -39,3 +46,6 @@ class Result (models.Model):
     card_two_isflipped = models.BooleanField()
     card_three_isflipped = models.BooleanField()
     card_four_isflipped = models.BooleanField()
+
+    def __unicode__(self):
+        return 'Result No. ' + str(self.id) + ' of ' + str(self.subject)
