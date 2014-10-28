@@ -2,6 +2,8 @@
 
     <p>{{ taskData.description }}</p>
 
+        <span data-i18n="_taskQuestion_"></span>
+
     <div>
         <div ng-class="{'selected': taskData.1.selected}" ng-click="setSelection(1)"
              class="card-container" onmousedown="event.preventDefault()">
@@ -20,9 +22,6 @@
             <div class="card">{{ taskData.4.card_id }}</div>
         </div>
     </div>
-
-
-    <span data-i18n="_taskQuestion_"></span>
 
     <div>
 

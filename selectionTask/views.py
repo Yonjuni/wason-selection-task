@@ -42,7 +42,10 @@ def assign(request):
         },
         4: {
             'card_id': task.card_four
-        }
+        },
+        'story': task.story,
+        'task_number': min(AbstractTask.objects.count(), ConcreteTask.objects.count()),
+        'progress': subject.results.count()
     }), content_type='application/json')
 
 
@@ -87,7 +90,10 @@ def submit(request):
         },
         4: {
             'card_id': task.card_four
-        }
+        },
+        'story': task.story,
+        'task_number': min(AbstractTask.objects.count(), ConcreteTask.objects.count()),
+        'progress': subject.results.count()
     }), content_type='application/json')
 
 

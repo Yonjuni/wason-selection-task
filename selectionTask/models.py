@@ -3,14 +3,15 @@ from django.db import models
 
 class Task (models.Model):
     description = models.TextField()
-    card_one = models.CharField(max_length=10)
-    card_two = models.CharField(max_length=10)
-    card_three = models.CharField(max_length=10)
-    card_four = models.CharField(max_length=10)
+    card_one = models.CharField(max_length=20)
+    card_two = models.CharField(max_length=20)
+    card_three = models.CharField(max_length=20)
+    card_four = models.CharField(max_length=20)
     card_one_isflipped = models.BooleanField()
     card_two_isflipped = models.BooleanField()
     card_three_isflipped = models.BooleanField()
     card_four_isflipped = models.BooleanField()
+    story = models.TextField()
 
 
 class AbstractTask (Task):
