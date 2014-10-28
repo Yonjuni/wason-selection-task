@@ -35,7 +35,7 @@ body {
 }
 
 .title {
-    max-width: 750px;
+    max-width: 800px;
     margin: 1em auto;
 }
 
@@ -117,4 +117,19 @@ body {
     margin-bottom: 3em;
     font-size: 15pt;
     border-radius: 5px;
+}
+
+.thanks-text {
+    max-width: 750px;
+    margin: 5em auto;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submitbutton {
+    float: right;
+    font-size: 15pt;
+    border-radius: 5px;
+    margin-right: 3em;
 }

@@ -38,5 +38,15 @@
         "key"        : "_ruleHeading_",
         "value"      : "Rule:",
         "description": ""
+    },
+    {
+        "key"        : "_error_",
+        "value"      : "Error:",
+        "description": ""
+    },
+    {
+        "key"        : "_questionHeading_",
+        "value"      : "Question:",
+        "description": ""
     }
 ]

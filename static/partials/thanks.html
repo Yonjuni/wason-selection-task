@@ -1,8 +1,15 @@
 <div>
 
+    <div class="progressbar">
 
-        <span data-i18n="_thanksText_"></span>
+        <div class="progress" ng-style="{'width': (100/taskData.task_number*taskData.progress) + '%'}"></div>
 
-        <button ng-click="submitButton()" data-i18n="_submitButton_"></button>
+    </div>
+
+        <div class="thanks-text">
+            <span data-i18n="_thanksText_"></span>
+        </div>
+
+        <button class="submitbutton" ng-click="submitButton()" data-i18n="_submitButton_"></button>
 
 </div>
