@@ -34,29 +34,58 @@ body {
     border-radius: 5px;
 }
 
+.title {
+    max-width: 750px;
+    margin: 1em auto;
+}
+
 .story {
-    margin: 2em;
+
     text-align: center;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    max-width: 750px;
+    margin: 2em auto;
 }
 
 .taskdescription {
-    margin: 2em;
+
     text-align: center;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    max-width: 750px;
+    margin: 2em auto;
 }
 
 .taskQuestion {
 
     text-align: center;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    max-width: 750px;
+    margin: 2em auto;
+}
+
+.card-centering-row {
+    position: relative;
+    left: 50%;
+}
+
+@media (max-width: 682px) {
+    .card-centering-row {
+        width: 324px;
+    }
 }
 
 .card-container {
     display: inline-block;
-    margin: 2em;
-    padding: 0.8em;
+    padding: 10px;
+    margin: 1em 10px;
     border-radius: 15px;
-    width: calc(20% - 3em - 10px);
+    width: 100%;
     border: 5px solid rgba(255, 255, 255, 0);
     cursor: pointer;
+    max-width: 110px;
 }
 
 .selected {
@@ -67,9 +96,8 @@ body {
     box-shadow: 4px 4px 10px black;
     border-radius: 10px;
     border: 1px solid #808080;
-    font-size: 1000%;
-    width: 100%;
-    padding: 0.2em 0;
+    font-size: 400%;
+    padding: 0.5em 0;
     text-align: center;
     vertical-align: middle;
 }
@@ -85,13 +113,8 @@ body {
 
 .continuebutton {
     float: right;
-    margin-right: 4em;
+    margin-right: 6em;
     margin-bottom: 3em;
     font-size: 15pt;
     border-radius: 5px;
 }
-
-
-
-
-

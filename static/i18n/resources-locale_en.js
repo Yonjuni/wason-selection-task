@@ -28,5 +28,15 @@
         "key"        : "_thanksText_",
         "value"      : "Thank you for taking part in the experiment. After pressing the submit button you will be leaded to the survey.",
         "description": "Thanks text after completing experiment"
+    },
+    {
+        "key"        : "_storyTitle_",
+        "value"      : "Thank you for taking part in the experiment. After pressing the submit button you will be leaded to the survey.",
+        "description": "Thanks text after completing experiment"
+    },
+    {
+        "key"        : "_ruleTitle_",
+        "value"      : "Thank you for taking part in the experiment. After pressing the submit button you will be leaded to the survey.",
+        "description": "Thanks text after completing experiment"
     }
 ]
