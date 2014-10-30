@@ -2,6 +2,7 @@
 
 selectionTaskApp.controller("taskCtrl", function ($scope, $routeParams, $location, Backend) {
 
+
     Backend.assign($routeParams['id']).success(function(data){
         var result = angular.fromJson(data);
         console.log(result);
