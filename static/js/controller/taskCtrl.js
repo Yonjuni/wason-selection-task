@@ -1,7 +1,7 @@
 'use strict';
 
 selectionTaskApp.controller("taskCtrl", function ($scope, $routeParams, $location, Backend) {
-    console.log($routeParams['id']);
+
     Backend.assign($routeParams['id']).success(function(data){
         var result = angular.fromJson(data);
         console.log(result);
