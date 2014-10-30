@@ -28,7 +28,7 @@ On a production server this probably is located somewhere in /var/www , on a dev
 
 Now you can clone the sourcecode of the application into your directory:
 
-git@github.com:Yonjuni/wason-selection-task.git
+    git@github.com:Yonjuni/wason-selection-task.git
 
 After that you should have a subdirectory wason-selection-task/ and if you created a virtualenv also a subdirectory venv/. The actual application is in the wason-selection-task/ directory. Please navigate into the wason-selection-task directory. 
 
