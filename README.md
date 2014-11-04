@@ -59,4 +59,6 @@ There is wsgi file (`wason-selection-task/wsgi.py`) which you can use with a wsg
 which webserver you use please refer to the documentation of your wsgi and webserver of your choice. We successfully 
 tested this with uwsgi and nginx.
 
-
+Further explanation
+-------------------
+For further explanation see the [Wiki on Github](https://github.com/Yonjuni/wason-selection-task/wiki "Wiki on Github").
