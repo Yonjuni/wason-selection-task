@@ -1,1 +1,1 @@
-resources-locale_en.js
+/home/yonjuni/Projects/Programming/Wason_Selection _Task/static/i18n/resources-locale_jp.js
