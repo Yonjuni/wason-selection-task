@@ -1,25 +1,6 @@
 {
     "abstractTasks": [
         {
-            "description": "If a card has a S on one side then it has a 3 on the other side.",
-            "firstCard": {
-                "card": "S",
-                "isFlipped": true
-            },
-            "secondCard": {
-                "card": "Q",
-                "isFlipped": false
-            },
-            "thirdCard": {
-                "card": "3",
-                "isFlipped": false
-            },
-            "fourthCard": {
-                "card": "7",
-                "isFlipped": true
-            }
-        },
-        {
             "description": "If a card has a 3 on one side then it has a S on the other side.",
             "firstCard": {
                 "card": "S",
