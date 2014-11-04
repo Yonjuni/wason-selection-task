@@ -28,7 +28,7 @@ def create_initial_data():
             task.card_four = task_data['fourthCard']['card']
             task.card_four_isflipped = task_data['fourthCard']['isFlipped']
             task.save()
-        print("Abstract tasks loaded")
+        print("Abstract tasks loaded ...")
         for task_data in data['concreteTasks']:
             task = ConcreteTask()
             task.description = task_data['description']
@@ -42,7 +42,7 @@ def create_initial_data():
             task.card_four_isflipped = task_data['fourthCard']['isFlipped']
             task.story = task_data['story']
             task.save()
-        print("Concrete tasks loaded")
+        print("Concrete tasks loaded ...")
 
 
 
