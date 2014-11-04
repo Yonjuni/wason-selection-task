@@ -44,7 +44,7 @@ angular.module('localization', [])
                 // request the resource file
                 $http({ method:"GET", url:url, cache:false }).success(localize.successCallback).error(function () {
                     // the request failed set the url to the default resource file
-                    var url = '/static/i18n/resources-locale_jp.js';
+                    var url = '/static/i18n/resources-locale_default.js';
                     // request the default resource file
                     $http({ method:"GET", url:url, cache:false }).success(localize.successCallback);
                 });
