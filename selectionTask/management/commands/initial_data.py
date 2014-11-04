@@ -13,5 +13,5 @@ class Command(BaseCommand):
     help = 'Creates initial task data in the database'
 
     def handle(self, *args, **options):
-        self.stdout.write("Creating initial data ...\n")
+        self.stdout.write("Creating initial task data ...\n")
         create_initial_data()

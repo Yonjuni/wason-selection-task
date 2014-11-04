@@ -1,4 +1,27 @@
-.Badibidibi {
-    background: url('/static/svg/pizza4.svg') no-repeat 0 0.35em;
-    background-size: 100%;
+.red {
+    background: darkred;
+}
+
+.green {
+    background: darkgreen;
+}
+
+.blue {
+    background: darkblue;
+}
+
+.orange {
+    background: darkorange;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.white {
+    background: white;
+}
+
+.black {
+    background: black;
 }
