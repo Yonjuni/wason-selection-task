@@ -1,0 +1,181 @@
+{
+    "abstractTasks": [
+        {
+            "description": "If a card has a S on one side then it has a 3 on the other side.",
+            "firstCard": {
+                "card": "S",
+                "isFlipped": true
+            },
+            "secondCard": {
+                "card": "Q",
+                "isFlipped": false
+            },
+            "thirdCard": {
+                "card": "3",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "7",
+                "isFlipped": true
+            }
+        },
+        {
+            "description": "If a card has a 3 on one side then it has a S on the other side.",
+            "firstCard": {
+                "card": "S",
+                "isFlipped": false
+            },
+            "secondCard": {
+                "card": "Q",
+                "isFlipped": true
+            },
+            "thirdCard": {
+                "card": "3",
+                "isFlipped": true
+            },
+            "fourthCard": {
+                "card": "7",
+                "isFlipped": false
+            }
+        },
+        {
+            "description": "If a card has a S on one side then it has a 3 on the other side.",
+            "firstCard": {
+                "card": "S",
+                "isFlipped": true
+            },
+            "secondCard": {
+                "card": "Q",
+                "isFlipped": false
+            },
+            "thirdCard": {
+                "card": "3",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "7",
+                "isFlipped": true
+            }
+        },
+        {
+            "description": "If there is a vowel on one side then there is an even number on the other side.",
+            "firstCard": {
+                "card": "E",
+                "isFlipped": true
+            },
+            "secondCard": {
+                "card": "K",
+                "isFlipped": false
+            },
+            "thirdCard": {
+                "card": "4",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "7",
+                "isFlipped": true
+            }
+        },
+        {
+            "description": "If a card is red on one side then the other side shows a consonant.",
+            "firstCard": {
+                "card": "S",
+                "isFlipped": false
+            },
+            "secondCard": {
+                "card": "green",
+                "isFlipped": false
+            },
+            "thirdCard": {
+                "card": "red",
+                "isFlipped": true
+            },
+            "fourthCard": {
+                "card": "A",
+                "isFlipped": true
+            }
+        }
+    ],
+    "concreteTasks": [
+        {
+            "description": "If a person drinks an alcoholic drink, then they must be over the age of 21 years old.",
+            "firstCard": {
+                "card": "beer",
+                "isFlipped": true
+            },
+            "secondCard": {
+                "card": "juice",
+                "isFlipped": false
+            },
+            "thirdCard": {
+                "card": "23 years",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "15 years",
+                "isFlipped": true
+            },
+            "story": "You are a person working in a disco."
+        },
+        {
+            "description": "If a person drives a car, then they must be over the age of 18 years old.",
+            "firstCard": {
+                "card": "17 years",
+                "isFlipped": true
+            },
+            "secondCard": {
+                "card": "car",
+                "isFlipped": true
+            },
+            "thirdCard": {
+                "card": "23 years",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "bicycle",
+                "isFlipped": false
+            },
+            "story": "You are a policeman patrolling on the street."
+        },
+        {
+            "description": "If a person earns less than 450 Euro then she does not have to pay income tax.",
+            "firstCard": {
+                "card": "250 Euro",
+                "isFlipped": true
+            },
+            "secondCard": {
+                "card": "Pays income tax",
+                "isFlipped": true
+            },
+            "thirdCard": {
+                "card": "Pays no income tax",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "800 Euro",
+                "isFlipped": false
+            },
+            "story": "You are a tax officer checking people's tax report."
+        },
+        {
+            "description": "If a person owns a TV, she has to pay 800 Yen",
+            "firstCard": {
+                "card": "PC",
+                "isFlipped": false
+            },
+            "secondCard": {
+                "card": "TV",
+                "isFlipped": true
+            },
+            "thirdCard": {
+                "card": "car",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "cellphone",
+                "isFlipped": false
+            },
+            "story": ""
+        }
+    ]
+}
