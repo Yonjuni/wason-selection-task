@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ObjectDoesNotExist
 
 
 class Task (models.Model):
@@ -13,9 +14,16 @@ class Task (models.Model):
     card_four_isflipped = models.BooleanField()
     story = models.TextField(default='', blank=True)
 
+    def __unicode__(self):
+        try:
+            self.concretetask
+            self.__class__ = ConcreteTask
+        except ObjectDoesNotExist:
+            self.__class__ = AbstractTask
+        return str(self)
+
 
 class AbstractTask (Task):
-
     def __unicode__(self):
         return 'Abstract Task: ' + str(self.id)
 
