@@ -78,6 +78,7 @@ class MyResultAdmin(admin.ModelAdmin):
 
 class MySubjectAdmin(admin.ModelAdmin):
     actions = [export_csv_subjects]
+    list_display = ('subject_id', 'group')
 
 
 class MyTaskAdmin(admin.ModelAdmin):

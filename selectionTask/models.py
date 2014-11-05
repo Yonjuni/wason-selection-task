@@ -34,8 +34,8 @@ class ConcreteTask (Task):
 
 
 class Subject (models.Model):
-    subject_id = models.CharField(max_length=30, unique=True)
-    group = models.BooleanField()
+    subject_id = models.CharField('Subject ID', max_length=30, unique=True, editable=False)
+    group = models.BooleanField('is abstract group', editable=False)
 
     def __unicode__(self):
         return 'Subject: ' + self.subject_id
@@ -48,12 +48,12 @@ class Subject (models.Model):
 
 
 class Result (models.Model):
-    subject = models.ForeignKey(Subject, related_name='results')
-    task = models.ForeignKey(Task, related_name='results')
-    first_card_flipped = models.BooleanField()
-    second_card_flipped = models.BooleanField()
-    third_card_flipped = models.BooleanField()
-    fourth_card_flipped = models.BooleanField()
+    subject = models.ForeignKey(Subject, related_name='results', editable=False)
+    task = models.ForeignKey(Task, related_name='results', editable=False)
+    first_card_flipped = models.BooleanField(editable=False)
+    second_card_flipped = models.BooleanField(editable=False)
+    third_card_flipped = models.BooleanField(editable=False)
+    fourth_card_flipped = models.BooleanField(editable=False)
 
     def __unicode__(self):
         return 'Result No. ' + str(self.id) + ' of ' + str(self.subject)
