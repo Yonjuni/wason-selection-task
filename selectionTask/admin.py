@@ -73,6 +73,7 @@ def convertGroup(boolean):
 
 class MyResultAdmin(admin.ModelAdmin):
     actions = [export_csv_results]
+    list_display = ('subject', 'task', 'first_card_flipped', 'second_card_flipped', 'third_card_flipped', 'fourth_card_flipped')
 
 
 class MySubjectAdmin(admin.ModelAdmin):
