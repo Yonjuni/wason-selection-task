@@ -24,13 +24,17 @@ def export_csv_results(result, request, queryset):
 
     ])
     for obj in queryset:
+        temp1 = convert(obj.card_one_isflipped)
+        temp2 = convert(obj.card_two_isflipped)
+        temp3 = convert(obj.card_three_isflipped)
+        temp4 = convert(obj.card_four_isflipped)
         writer.writerow([
             smart_str(obj.subject),
             smart_str(obj.task),
-            smart_str(obj.card_one_isflipped),
-            smart_str(obj.card_two_isflipped),
-            smart_str(obj.card_three_isflipped),
-            smart_str(obj.card_four_isflipped),
+            smart_str(temp1),
+            smart_str(temp2),
+            smart_str(temp3),
+            smart_str(temp4),
         ])
     return response
 export_csv_results.short_description = u"Export CSV"
@@ -47,12 +51,27 @@ def export_csv_subjects(result, request, queryset):
         smart_str(u"Group"),
     ])
     for obj in queryset:
+        temp = convertGroup(obj.group)
         writer.writerow([
             smart_str(obj.subject_id),
-            smart_str(obj.group),
+            smart_str(temp),
         ])
     return response
 export_csv_results.short_description = u"Export CSV"
+
+
+def convert(boolean):
+    if boolean == True:
+        return "1"
+    else:
+        return "0"
+
+
+def convertGroup(boolean):
+    if boolean == True:
+        return "Abstract"
+    else:
+        return "Concrete"
 
 
 class MyResultAdmin(admin.ModelAdmin):
