@@ -17,7 +17,8 @@
             "fourthCard": {
                 "card": "7",
                 "isFlipped": false
-            }
+            },
+            "story": "Each card has a number on one side and a letter on the other side."
         },
         {
             "description": "If a card has a S on one side then it has a 3 on the other side.",
@@ -36,7 +37,8 @@
             "fourthCard": {
                 "card": "7",
                 "isFlipped": true
-            }
+            },
+            "story": "Each card has a number on one side and a letter on the other side."
         },
         {
             "description": "If there is a vowel on one side then there is an even number on the other side.",
@@ -55,7 +57,8 @@
             "fourthCard": {
                 "card": "7",
                 "isFlipped": true
-            }
+            },
+            "story": "Each card has a number on one side and a letter on the other side."
         },
         {
             "description": "If a card is red on one side then the other side shows a consonant.",
@@ -74,7 +77,8 @@
             "fourthCard": {
                 "card": "A",
                 "isFlipped": true
-            }
+            },
+            "story": "Each card has a colour on one side and a letter on the other side."
         }
     ],
     "concreteTasks": [
@@ -96,7 +100,7 @@
                 "card": "15",
                 "isFlipped": true
             },
-            "story": "You are a person working in a disco. The numbers on the cards are the age if a checked person."
+            "story": "You are a person working in a disco. The numbers on the cards correspond to a person's age. Each card has an age on one side and a drink on the other side."
         },
         {
             "description": "If a person drives a car, then they must be over the age of 18 years old.",
@@ -116,7 +120,7 @@
                 "card": "bicycle",
                 "isFlipped": false
             },
-            "story": "You are a policeman patrolling on the street. The numbers on the cards are the age if a checked person."
+            "story": "You are a policeman patrolling on the street. The numbers on the cards correspond to an age. Each card has a vehicle on one side and an age on the other side"
         },
         {
             "description": "If a person earns less than 450 Euro then she does not have to pay income tax.",
@@ -136,10 +140,10 @@
                 "card": "800 Euro",
                 "isFlipped": false
             },
-            "story": "You are a tax officer checking people's tax report."
+            "story": "You are a tax officer checking people's tax report. Each card has an income on one side and a statement if income tax is payed or not on the other side."
         },
         {
-            "description": "If a person owns a TV, she has to pay 800 Yen",
+            "description": "If a person owns a TV, she has to be other than 18 years.",
             "firstCard": {
                 "card": "PC",
                 "isFlipped": false
@@ -149,14 +153,14 @@
                 "isFlipped": true
             },
             "thirdCard": {
-                "card": "car",
+                "card": "42",
                 "isFlipped": false
             },
             "fourthCard": {
-                "card": "cellphone",
-                "isFlipped": false
+                "card": "11",
+                "isFlipped": true
             },
-            "story": ""
+            "story": "Each card has an electrical device on one side and an age on the other side."
         }
     ]
 }
