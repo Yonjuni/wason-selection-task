@@ -14,10 +14,10 @@ def export_csv_results(result, request, queryset):
     writer.writerow([
         smart_str(u"Subject ID"),
         smart_str(u"Task ID"),
-        smart_str(u"First Card Flipped"),
-        smart_str(u"Second Card Flipped"),
-        smart_str(u"Third Card Flipped"),
-        smart_str(u"Fourth Card Flipped"),
+        smart_str(u"1st Card Flipped"),
+        smart_str(u"2nd Card Flipped"),
+        smart_str(u"3rd Card Flipped"),
+        smart_str(u"4th Card Flipped"),
 
     ])
     for obj in queryset:

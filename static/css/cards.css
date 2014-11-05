@@ -25,3 +25,13 @@
 .black {
     background: black;
 }
+
+.beer {
+    background: url('/static/svg/beer.svg') no-repeat center;
+    background-size: 100%;
+}
+
+.juice {
+    background: url('/static/svg/juice.svg') no-repeat center;
+    background-size: 100%;
+}
