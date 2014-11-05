@@ -6,10 +6,9 @@ import csv
 
 admin.site.register(AbstractTask)
 admin.site.register(ConcreteTask)
-admin.site.register(Subject)
 
 
-def export_csv(result, request, queryset):
+def export_csv_results(result, request, queryset):
 
     response = HttpResponse(mimetype='text/csv')
     response['Content-Disposition'] = 'attachment; filename=results.csv'
@@ -34,10 +33,35 @@ def export_csv(result, request, queryset):
             smart_str(obj.card_four_isflipped),
         ])
     return response
-export_csv.short_description = u"Export CSV"
+export_csv_results.short_description = u"Export CSV"
+
+
+def export_csv_subjects(result, request, queryset):
+
+    response = HttpResponse(mimetype='text/csv')
+    response['Content-Disposition'] = 'attachment; filename=subjects.csv'
+    writer = csv.writer(response, csv.excel)
+    response.write(u'\ufeff'.encode('utf8'))
+    writer.writerow([
+        smart_str(u"Subject ID"),
+        smart_str(u"Group"),
+    ])
+    for obj in queryset:
+        writer.writerow([
+            smart_str(obj.subject_id),
+            smart_str(obj.group),
+        ])
+    return response
+export_csv_results.short_description = u"Export CSV"
 
 
 class MyResultAdmin(admin.ModelAdmin):
-    actions = [export_csv]
+    actions = [export_csv_results]
+
+
+class MySubjectAdmin(admin.ModelAdmin):
+    actions = [export_csv_subjects]
+
 
 admin.site.register(Result, MyResultAdmin)
+admin.site.register(Subject, MySubjectAdmin)
