@@ -32,16 +32,16 @@ def assign(request):
         'task_id': task.pk,
         'description': task.description,
         1: {
-            'card_id': task.card_one
+            'card_id': task.first_card
         },
         2: {
-            'card_id': task.card_two
+            'card_id': task.second_card
         },
         3: {
-            'card_id': task.card_three
+            'card_id': task.third_card
         },
         4: {
-            'card_id': task.card_four
+            'card_id': task.fourth_card
         },
         'story': task.story,
         'task_number': min(AbstractTask.objects.count(), ConcreteTask.objects.count()),
@@ -80,16 +80,16 @@ def submit(request):
         'task_id': task.pk,
         'description': task.description,
         1: {
-            'card_id': task.card_one
+            'card_id': task.first_card
         },
         2: {
-            'card_id': task.card_two
+            'card_id': task.second_card
         },
         3: {
-            'card_id': task.card_three
+            'card_id': task.third_card
         },
         4: {
-            'card_id': task.card_four
+            'card_id': task.fourth_card
         },
         'story': task.story,
         'task_number': min(AbstractTask.objects.count(), ConcreteTask.objects.count()),

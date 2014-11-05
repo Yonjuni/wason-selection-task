@@ -19,27 +19,27 @@ def create_initial_data():
         for task_data in data['abstractTasks']:
             task = AbstractTask()
             task.description = task_data['description']
-            task.card_one = task_data['firstCard']['card']
-            task.card_one_isflipped = task_data['firstCard']['isFlipped']
-            task.card_two = task_data['secondCard']['card']
-            task.card_two_isflipped = task_data['secondCard']['isFlipped']
-            task.card_three = task_data['thirdCard']['card']
-            task.card_three_isflipped = task_data['thirdCard']['isFlipped']
-            task.card_four = task_data['fourthCard']['card']
-            task.card_four_isflipped = task_data['fourthCard']['isFlipped']
+            task.first_card = task_data['firstCard']['card']
+            task.first_card_should_flip = task_data['firstCard']['isFlipped']
+            task.second_card = task_data['secondCard']['card']
+            task.second_card_should_flip = task_data['secondCard']['isFlipped']
+            task.third_card = task_data['thirdCard']['card']
+            task.third_card_should_flip = task_data['thirdCard']['isFlipped']
+            task.fourth_card = task_data['fourthCard']['card']
+            task.fourth_card_should_flip = task_data['fourthCard']['isFlipped']
             task.save()
         print("Abstract tasks loaded ...")
         for task_data in data['concreteTasks']:
             task = ConcreteTask()
             task.description = task_data['description']
-            task.card_one = task_data['firstCard']['card']
-            task.card_one_isflipped = task_data['firstCard']['isFlipped']
-            task.card_two = task_data['secondCard']['card']
-            task.card_two_isflipped = task_data['secondCard']['isFlipped']
-            task.card_three = task_data['thirdCard']['card']
-            task.card_three_isflipped = task_data['thirdCard']['isFlipped']
-            task.card_four = task_data['fourthCard']['card']
-            task.card_four_isflipped = task_data['fourthCard']['isFlipped']
+            task.first_card = task_data['firstCard']['card']
+            task.first_card_should_flip = task_data['firstCard']['isFlipped']
+            task.second_card = task_data['secondCard']['card']
+            task.second_card_should_flip = task_data['secondCard']['isFlipped']
+            task.third_card = task_data['thirdCard']['card']
+            task.third_card_should_flip = task_data['thirdCard']['isFlipped']
+            task.fourth_card = task_data['fourthCard']['card']
+            task.fourth_card_should_flip = task_data['fourthCard']['isFlipped']
             task.story = task_data['story']
             task.save()
         print("Concrete tasks loaded ...")

@@ -4,14 +4,14 @@ from django.core.exceptions import ObjectDoesNotExist
 
 class Task (models.Model):
     description = models.TextField()
-    card_one = models.CharField(max_length=20)
-    card_two = models.CharField(max_length=20)
-    card_three = models.CharField(max_length=20)
-    card_four = models.CharField(max_length=20)
-    card_one_isflipped = models.BooleanField()
-    card_two_isflipped = models.BooleanField()
-    card_three_isflipped = models.BooleanField()
-    card_four_isflipped = models.BooleanField()
+    first_card = models.CharField(max_length=20)
+    second_card = models.CharField(max_length=20)
+    third_card = models.CharField(max_length=20)
+    fourth_card = models.CharField(max_length=20)
+    first_card_should_flip = models.BooleanField()
+    second_card_should_flip = models.BooleanField()
+    third_card_should_flip = models.BooleanField()
+    fourth_card_should_flip = models.BooleanField()
     story = models.TextField(default='', blank=True)
 
     def __unicode__(self):
