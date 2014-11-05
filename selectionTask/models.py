@@ -12,7 +12,7 @@ class Task (models.Model):
     second_card_should_flip = models.BooleanField()
     third_card_should_flip = models.BooleanField()
     fourth_card_should_flip = models.BooleanField()
-    story = models.TextField('Story (optional)', default='', blank=True)
+    story = models.TextField()
 
     def __unicode__(self):
         try:
