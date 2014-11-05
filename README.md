@@ -38,11 +38,11 @@ Initialize your database with
 
     ./manage.py syncdb
     
-If you would like to add initial task data for testing or whatever you can do this by
+If you would like to add initial task data for testing or so you can do this by
 
     ./manage.py initial_data
 
-Sample data can be found in intial_data.json file in the Wason_Selection_Task directory (or however you named it), it is written in Jason format and can of course be changed. 
+Sample data can be found in intial_data.json file in the Wason_Selection_Task directory (or however you named it), it is written in Jason format and can of course be changed. Sample data added by default consists of four abstract and four concrete tasks.
     
 Start a development Server
 --------------------------
