@@ -80,7 +80,13 @@ class MySubjectAdmin(admin.ModelAdmin):
     actions = [export_csv_subjects]
 
 
+class MyTaskAdmin(admin.ModelAdmin):
+    fields = ('description', ('first_card', 'first_card_should_flip'), ('second_card', 'second_card_should_flip'),
+              ('third_card', 'third_card_should_flip'), ('fourth_card', 'fourth_card_should_flip'), 'story'
+    )
+
+
 admin.site.register(Result, MyResultAdmin)
 admin.site.register(Subject, MySubjectAdmin)
-admin.site.register(AbstractTask)
-admin.site.register(ConcreteTask)
+admin.site.register(AbstractTask, MyTaskAdmin)
+admin.site.register(ConcreteTask, MyTaskAdmin)
