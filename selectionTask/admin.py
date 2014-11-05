@@ -21,10 +21,10 @@ def export_csv_results(result, request, queryset):
 
     ])
     for obj in queryset:
-        temp1 = convert(obj.card_one_isflipped)
-        temp2 = convert(obj.card_two_isflipped)
-        temp3 = convert(obj.card_three_isflipped)
-        temp4 = convert(obj.card_four_isflipped)
+        temp1 = convert(obj.first_card_flipped)
+        temp2 = convert(obj.second_card_flipped)
+        temp3 = convert(obj.third_card_flipped)
+        temp4 = convert(obj.fourth_card_flipped)
         writer.writerow([
             smart_str(obj.subject),
             smart_str(obj.task),

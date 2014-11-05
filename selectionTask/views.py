@@ -65,10 +65,10 @@ def submit(request):
     except IndexError:
         return HttpResponse('{"Error": "Unknown task."}', content_type='application/json')
     result = Result(subject=subject, task=task)
-    result.card_one_isflipped = result_data['1']
-    result.card_two_isflipped = result_data['2']
-    result.card_three_isflipped = result_data['3']
-    result.card_four_isflipped = result_data['4']
+    result.first_card_flipped = result_data['1']
+    result.second_card_flipped = result_data['2']
+    result.third_card_flipped = result_data['3']
+    result.fourth_card_flipped = result_data['4']
     result.save()
     if subject.results.count() >= min(AbstractTask.objects.count(), ConcreteTask.objects.count()):
         return HttpResponse('{"Finished": "Tasks completed."}', content_type='application/json')

@@ -50,10 +50,10 @@ class Subject (models.Model):
 class Result (models.Model):
     subject = models.ForeignKey(Subject, related_name='results')
     task = models.ForeignKey(Task, related_name='results')
-    card_one_isflipped = models.BooleanField()
-    card_two_isflipped = models.BooleanField()
-    card_three_isflipped = models.BooleanField()
-    card_four_isflipped = models.BooleanField()
+    first_card_flipped = models.BooleanField()
+    second_card_flipped = models.BooleanField()
+    third_card_flipped = models.BooleanField()
+    fourth_card_flipped = models.BooleanField()
 
     def __unicode__(self):
         return 'Result No. ' + str(self.id) + ' of ' + str(self.subject)
