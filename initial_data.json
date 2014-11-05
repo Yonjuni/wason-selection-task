@@ -89,19 +89,19 @@
                 "isFlipped": false
             },
             "thirdCard": {
-                "card": "23 years",
+                "card": "23",
                 "isFlipped": false
             },
             "fourthCard": {
-                "card": "15 years",
+                "card": "15",
                 "isFlipped": true
             },
-            "story": "You are a person working in a disco."
+            "story": "You are a person working in a disco. The numbers on the cards are the age if a checked person."
         },
         {
             "description": "If a person drives a car, then they must be over the age of 18 years old.",
             "firstCard": {
-                "card": "17 years",
+                "card": "17",
                 "isFlipped": true
             },
             "secondCard": {
@@ -109,14 +109,14 @@
                 "isFlipped": true
             },
             "thirdCard": {
-                "card": "23 years",
+                "card": "23",
                 "isFlipped": false
             },
             "fourthCard": {
                 "card": "bicycle",
                 "isFlipped": false
             },
-            "story": "You are a policeman patrolling on the street."
+            "story": "You are a policeman patrolling on the street. The numbers on the cards are the age if a checked person."
         },
         {
             "description": "If a person earns less than 450 Euro then she does not have to pay income tax.",

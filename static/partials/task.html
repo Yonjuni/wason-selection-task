@@ -30,15 +30,15 @@
             <div ng-class="{'selected': taskData.1.selected}" ng-click="setSelection(1)"
                  class="card-container" onmousedown="event.preventDefault()">
                 <div class="card" ng-class="taskData.1.card_id">
-                    <span ng-show="taskData.1.card_id.length == 1">{{ taskData.1.card_id }}</span>
-                    <span ng-hide="taskData.1.card_id.length == 1">&nbsp;</span>
+                    <span ng-show="taskData.1.card_id.length <= 2">{{ taskData.1.card_id }}</span>
+                    <span ng-hide="taskData.1.card_id.length <= 2">&nbsp;</span>
                 </div>
             </div>
             <div ng-class="{'selected': taskData.2.selected}" ng-click="setSelection(2)"
                  class="card-container" onmousedown="event.preventDefault()">
                  <div class="card" ng-class="taskData.2.card_id">
-                     <span ng-show="taskData.2.card_id.length == 1">{{ taskData.2.card_id }}</span>
-                     <span ng-hide="taskData.2.card_id.length == 1">&nbsp;</span>
+                     <span ng-show="taskData.2.card_id.length <= 2">{{ taskData.2.card_id }}</span>
+                     <span ng-hide="taskData.2.card_id.length <= 2">&nbsp;</span>
                  </div>
             </div>
         </div>
@@ -46,15 +46,15 @@
             <div ng-class="{'selected': taskData.3.selected}" ng-click="setSelection(3)"
                  class="card-container" onmousedown="event.preventDefault()">
                  <div class="card" ng-class="taskData.3.card_id">
-                     <span ng-show="taskData.3.card_id.length == 1">{{ taskData.3.card_id }}</span>
-                     <span ng-hide="taskData.3.card_id.length == 1">&nbsp;</span>
+                     <span ng-show="taskData.3.card_id.length <= 2">{{ taskData.3.card_id }}</span>
+                     <span ng-hide="taskData.3.card_id.length <= 2">&nbsp;</span>
                  </div>
             </div>
             <div ng-class="{'selected': taskData.4.selected}" ng-click="setSelection(4)"
                  class="card-container" onmousedown="event.preventDefault()">
                  <div class="card" ng-class="taskData.4.card_id">
-                     <span ng-show="taskData.4.card_id.length == 1">{{ taskData.4.card_id }}</span>
-                     <span ng-hide="taskData.4.card_id.length == 1">&nbsp;</span>
+                     <span ng-show="taskData.4.card_id.length <= 2">{{ taskData.4.card_id }}</span>
+                     <span ng-hide="taskData.4.card_id.length <= 2">&nbsp;</span>
                  </div>
             </div>
         </div>

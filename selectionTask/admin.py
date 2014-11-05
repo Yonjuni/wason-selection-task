@@ -4,9 +4,6 @@ from models import AbstractTask, ConcreteTask, Subject, Result
 from django.http import HttpResponse
 import csv
 
-admin.site.register(AbstractTask)
-admin.site.register(ConcreteTask)
-
 
 def export_csv_results(result, request, queryset):
 
@@ -84,3 +81,5 @@ class MySubjectAdmin(admin.ModelAdmin):
 
 admin.site.register(Result, MyResultAdmin)
 admin.site.register(Subject, MySubjectAdmin)
+admin.site.register(AbstractTask)
+admin.site.register(ConcreteTask)
