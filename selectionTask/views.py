@@ -69,6 +69,7 @@ def submit(request):
     result.second_card_flipped = result_data['2']
     result.third_card_flipped = result_data['3']
     result.fourth_card_flipped = result_data['4']
+    result.time = result_data['time']
     result.save()
     if subject.results.count() >= min(AbstractTask.objects.count(), ConcreteTask.objects.count()):
         return HttpResponse('{"Finished": "Tasks completed."}', content_type='application/json')

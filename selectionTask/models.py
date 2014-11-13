@@ -54,6 +54,7 @@ class Result (models.Model):
     second_card_flipped = models.BooleanField(editable=False)
     third_card_flipped = models.BooleanField(editable=False)
     fourth_card_flipped = models.BooleanField(editable=False)
+    time = models.BigIntegerField('Time (Millisec)', editable=False)
 
     def __unicode__(self):
         return 'Result No. ' + str(self.id) + ' of ' + str(self.subject)

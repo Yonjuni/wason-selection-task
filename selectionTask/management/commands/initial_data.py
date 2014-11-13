@@ -13,7 +13,7 @@ def create_initial_data():
                 os.path.pardir,
                 os.path.pardir,
                 os.path.pardir,
-                "initial_data.json")),
+                "sample_data.json")),
               'r') as data_file:
         data = json.loads(data_file.read())
         for task_data in data['abstractTasks']:

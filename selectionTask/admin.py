@@ -18,6 +18,7 @@ def export_csv_results(result, request, queryset):
         smart_str(u"2nd Card Flipped"),
         smart_str(u"3rd Card Flipped"),
         smart_str(u"4th Card Flipped"),
+        smart_str(u"Time (Millisec)"),
 
     ])
     for obj in queryset:
@@ -32,6 +33,7 @@ def export_csv_results(result, request, queryset):
             smart_str(temp2),
             smart_str(temp3),
             smart_str(temp4),
+            smart_str(obj.time),
         ])
     return response
 export_csv_results.short_description = u"Export CSV"
@@ -73,7 +75,7 @@ def convertGroup(boolean):
 
 class MyResultAdmin(admin.ModelAdmin):
     actions = [export_csv_results]
-    list_display = ('subject', 'task', 'first_card_flipped', 'second_card_flipped', 'third_card_flipped', 'fourth_card_flipped')
+    list_display = ('subject', 'task', 'first_card_flipped', 'second_card_flipped', 'third_card_flipped', 'fourth_card_flipped', 'time')
 
 
 class MySubjectAdmin(admin.ModelAdmin):
