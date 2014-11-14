@@ -1,53 +1,53 @@
 [
     {
         "key"        : "_nextButton_",
-        "value"      : "次へ",
-        "description": "Next button"
+        "value"      : "Next task",
+        "description": "Next button used during the tasks"
     },
     {
         "key"        : "_submitButton_",
-        "value"      : "送信",
+        "value"      : "Submit results",
         "description": "Submit button used after the tasks to submit results"
     },
     {
         "key"        : "_taskQuestion_",
-        "value"      : "上記のルールが守られているかどうかを確かめるためには、どのカードをめくって確かめる必要があると思いますか？",
+        "value"      : "Which cards have to be flipped to proof the above mentioned rule?",
         "description": "Question regarding the task"
     },
     {
         "key"        : "_welcomeMessage_",
-        "value"      : "実験ページへようこそ",
+        "value"      : "Welcome to the experiment",
         "description": "Welcome Message on introduction page"
     },
     {
         "key"        : "_continueButton_",
-        "value"      : "実験へ進む",
+        "value"      : "Continue to experiment",
         "description": "Continue button on introduction page"
     },
     {
         "key"        : "_thanksText_",
-        "value"      : "ご回答ありがとうございました。送信ボタンを押下すると調査サイトへ戻ります",
+        "value"      : "Thank you for taking part in the experiment. After pressing the submit button you will be leaded to the survey.",
         "description": "Thanks text after completing experiment"
     },
     {
         "key"        : "_storyHeading_",
-        "value"      : "ストーリー：",
-        "description": "Heading which says story"
+        "value"      : "Story:",
+        "description": ""
     },
     {
         "key"        : "_ruleHeading_",
-        "value"      : "ルール：",
-        "description": "Heading which says rule"
+        "value"      : "Rule:",
+        "description": ""
     },
     {
         "key"        : "_error_",
-        "value"      : "エラー：",
-        "description": "Heading which says error"
+        "value"      : "Error:",
+        "description": ""
     },
     {
         "key"        : "_questionHeading_",
-        "value"      : "質問：",
-        "description": " question"
+        "value"      : "Question:",
+        "description": ""
     },
     {
         "key"        : "_experimentDescription_",
