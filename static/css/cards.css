@@ -35,3 +35,8 @@
     background: url('/static/svg/juice.svg') no-repeat center;
     background-size: 100%;
 }
+
+.car {
+    background: url('/static/svg/car.svg') no-repeat center;
+    background-size: 100%;
+}
