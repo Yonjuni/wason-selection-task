@@ -48,5 +48,10 @@
         "key"        : "_questionHeading_",
         "value"      : "Question:",
         "description": ""
+    },
+    {
+        "key"        : "_experimentDescription_",
+        "value"      : "Each experiment consists of a description, a story, a rule and four cards. Please read everything carefully and decide which card or cards have to be flipped to proof the rule. It's possible to click any combination of cards or none.",
+        "description": ""
     }
 ]

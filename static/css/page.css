@@ -19,6 +19,20 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.intro-heading {
+    margin: 3em auto;
+}
+
+.intro-text {
+    max-width: 750px;
+    margin: 3em auto;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 4px 4px 10px black;
+}
+
 .progressbar {
     height: 1em;
     width: calc(100% - 4em);
