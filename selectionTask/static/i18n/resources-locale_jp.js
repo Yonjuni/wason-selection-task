@@ -51,7 +51,7 @@
     },
     {
         "key"        : "_experimentDescription_",
-        "value"      : "Each experiment consists of a description, a story, a rule and four cards. Please read everything carefully and decide which card or cards have to be flipped to proof the rule. It's possible to click any combination of cards or none.",
+        "value"      : "それぞれの課題には、ストーリー、ルール、質問、そして4枚のカードが表示されます。すべての文章をよく読んだ上で、ルールが守られているかどうかを調べるためにどのカードをめくって確認する必要があるかをお答えください。めくるカードは何枚でも選ぶことができます。",
         "description": ""
     }
 ]
