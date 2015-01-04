@@ -1,4 +1,4 @@
-.red {
+.darkred {
     background: darkred;
 }
 
@@ -26,17 +26,32 @@
     background: black;
 }
 
-.beer {
-    background: url('/selectionTask/static/svg/beer.svg') no-repeat center;
+.beer-card {
+    background: url('/static/svg/beer.jpg') no-repeat center;
     background-size: 100%;
 }
 
-.juice {
-    background: url('/selectionTask/static/svg/juice.svg') no-repeat center;
+.car-card {
+    background: url('/static/svg/car.png') no-repeat center;
     background-size: 100%;
 }
 
-.car {
-    background: url('/selectionTask/static/svg/car.svg') no-repeat center;
+.coffee-card {
+    background: url('/static/svg/coffee.jpg') no-repeat center;
+    background-size: 100%;
+}
+
+.bicycle-card {
+    background: url('/static/svg/bicycle.png') no-repeat center;
+    background-size: 100%;
+}
+
+.PC-card {
+    background: url('/static/svg/PC.jpg') no-repeat center;
+    background-size: 100%;
+}
+
+.TV-card {
+    background: url('/static/svg/tv.jpg') no-repeat center;
     background-size: 100%;
 }

@@ -16,6 +16,16 @@ selectionTaskApp.controller("taskCtrl", function ($scope, $routeParams, $locatio
         $scope.taskData[number].selected = !$scope.taskData[number].selected;
     };
 
+    $scope.getCardTypeClass = function (idStr) {
+        if (idStr.length == 3) {
+            return 'card-three';
+        }
+        if (idStr.length == 4) {
+            return 'card-four';
+        }
+        return 'card';
+    };
+
     $scope.clickNext = function () {
         var endTime = Date.now();
         Backend.submit($routeParams['id'], {

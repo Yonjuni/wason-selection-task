@@ -71,7 +71,7 @@
                 "isFlipped": false
             },
             "thirdCard": {
-                "card": "red",
+                "card": "darkred",
                 "isFlipped": true
             },
             "fourthCard": {
@@ -85,19 +85,19 @@
         {
             "description": "If a person drinks an alcoholic drink, then they must be over the age of 21 years old.",
             "firstCard": {
-                "card": "beer",
+                "card": "beer-card",
                 "isFlipped": true
             },
             "secondCard": {
-                "card": "juice",
+                "card": "coffee-card",
                 "isFlipped": false
             },
             "thirdCard": {
-                "card": "23",
+                "card": "23歳",
                 "isFlipped": false
             },
             "fourthCard": {
-                "card": "15",
+                "card": "15歳",
                 "isFlipped": true
             },
             "story": "You are a person working in a disco. The numbers on the cards correspond to a person's age. Each card has an age on one side and a drink on the other side."
@@ -105,62 +105,62 @@
         {
             "description": "If a person drives a car, then they must be over the age of 18 years old.",
             "firstCard": {
-                "card": "17",
+                "card": "17歳",
                 "isFlipped": true
             },
             "secondCard": {
-                "card": "car",
+                "card": "car-card",
                 "isFlipped": true
             },
             "thirdCard": {
-                "card": "23",
+                "card": "23歳",
                 "isFlipped": false
             },
             "fourthCard": {
-                "card": "bicycle",
+                "card": "bicycle-card",
                 "isFlipped": false
             },
             "story": "You are a policeman patrolling on the street. The numbers on the cards correspond to an age. Each card has a vehicle on one side and an age on the other side"
         },
         {
-            "description": "If a person earns less than 450 Euro then she does not have to pay income tax.",
-            "firstCard": {
-                "card": "250 Euro",
-                "isFlipped": true
-            },
-            "secondCard": {
-                "card": "Pays income tax",
-                "isFlipped": true
-            },
-            "thirdCard": {
-                "card": "Pays no income tax",
-                "isFlipped": false
-            },
-            "fourthCard": {
-                "card": "800 Euro",
-                "isFlipped": false
-            },
-            "story": "You are a tax officer checking people's tax report. Each card has an income on one side and a statement if income tax is payed or not on the other side."
-        },
-        {
             "description": "If a person owns a TV, she has to be other than 18 years.",
             "firstCard": {
-                "card": "PC",
+                "card": "PC-card",
                 "isFlipped": false
             },
             "secondCard": {
-                "card": "TV",
+                "card": "TV-card",
                 "isFlipped": true
             },
             "thirdCard": {
-                "card": "42",
+                "card": "42歳",
                 "isFlipped": false
             },
             "fourthCard": {
-                "card": "11",
+                "card": "11歳",
                 "isFlipped": true
             },
             "story": "Each card has an electrical device on one side and an age on the other side."
+        },
+        {
+            "description": "If a person drinks an alcoholic drink, then they must be over the age of 21 years old.",
+            "firstCard": {
+                "card": "coffee-card",
+                "isFlipped": false
+            },
+            "secondCard": {
+                "card": "10歳",
+                "isFlipped": true
+            },
+            "thirdCard": {
+                "card": "42歳",
+                "isFlipped": false
+            },
+            "fourthCard": {
+                "card": "beer-card",
+                "isFlipped": true
+            },
+            "story": "You are a policeman checking people in a bar."
         }
     ]
 }
